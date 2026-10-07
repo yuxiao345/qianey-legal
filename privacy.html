@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · 钱伲 / Privacy Policy · Qianey</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 6rem;
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+    color: #1c1b1b; background: #fcf9f8;
+  }
+  h1 { font-size: 1.6rem; margin: 0 0 .35rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.15rem; margin: 2.4rem 0 .6rem; padding-top: 1.2rem; border-top: 1px solid #e5e2e1; }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  .eff { color: #5c5f60; font-size: .9rem; margin: 0 0 2rem; }
+  .lead { font-size: 1.05rem; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .3rem 0; }
+  code { background: #f0edec; padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  a { color: #006d35; }
+  hr.split { margin: 4rem 0; border: 0; border-top: 1px dashed #c5c7c8; }
+  .en { color: #3c4a3d; }
+  .en h2 { color: #1c1b1b; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e2e1; background: #131313; }
+    h2 { border-top-color: #353534; }
+    .eff { color: #b9cbb8; }
+    code { background: #2a2a2a; }
+    a { color: #00ff7f; }
+    .en { color: #b9cbb8; }
+    .en h2 { color: #e5e2e1; }
+  }
+</style>
+</head>
+<body>
+
+<h1>隐私政策</h1>
+<p class="eff">
+  钱伲（Qianey）· 由【开发者名称】开发 · 生效日期：2026 年 10 月 7 日
+</p>
+
+<p class="lead">
+  <strong>一句话：钱伲不收集你的数据。</strong>
+  没有账号，没有我们的服务器，没有广告，没有追踪。你的账目存在你自己的 iCloud 里。
+</p>
+
+<h2>1. 我们不收集什么</h2>
+<ul>
+  <li>不要求注册。我们不收集你的手机号、邮箱、姓名或任何身份信息。</li>
+  <li>不收集设备标识符用于追踪。</li>
+  <li>不使用任何第三方广告、分析或崩溃统计 SDK。本 App 不包含任何第三方依赖。</li>
+  <li>我们不运营用于存放你账目的服务器——我们没有这样的服务器。</li>
+</ul>
+
+<h2>2. 你的数据存在哪里</h2>
+<p>
+  你记录的每一笔交易、账户、分类、预算、商户、成员和附件图片，都保存在
+  <strong>你自己的 iCloud 私有数据库</strong>中（Apple CloudKit，使用你的 Apple ID 与 iCloud 存储空间）。
+  这些数据由 Apple 加密存储在你的 iCloud 账户里。
+</p>
+<p>
+  <strong>我们无法读取它们。</strong>本 App 不使用 CloudKit 的公共数据库，因此在任何界面上都看不到任何用户的记录。
+</p>
+<p>
+  如果你把账本共享给家人，被邀请的人会通过 Apple 的共享机制看到这本账的内容。是否共享、共享给谁完全由你决定；
+  开发者不是共享参与者，同样看不到内容。你也可以随时退出已加入的共享账本。
+</p>
+
+<h2>3. 保存在你设备上的数据</h2>
+<p>除 iCloud 之外，App 会在你的设备本地保存：</p>
+<ul>
+  <li>一份本地数据库副本，用于离线记账和快速读取；</li>
+  <li>少量偏好设置，例如当前账本、外观模式、App 锁开关。</li>
+</ul>
+<p>这些内容都留在你的设备上，不会发送给我们。</p>
+
+<h2>4. 唯一的外部网络请求：汇率</h2>
+<p>
+  当你记录一笔<strong>币种与账本本位币不同</strong>的交易时，App 会向公开汇率服务
+  <code>api.frankfurter.app</code>（Frankfurter，一个开源免费的汇率接口）请求该货币对的汇率。
+</p>
+<ul>
+  <li>请求中只包含<strong>货币对</strong>（例如 USD 对 CNY），不包含任何个人信息、账户信息或金额。</li>
+  <li>与访问任何网站一样，该服务的运营方可能看到你的 IP 地址。</li>
+  <li>如果你不使用多币种记账，就不会产生该请求。</li>
+</ul>
+<p>除此之外，App 不发起任何其他网络请求。</p>
+
+<h2>5. 我们不申请你不需要的权限</h2>
+<ul>
+  <li>
+    <strong>照片：</strong>只有当你自己点「附件」并亲手选中图片时，App 才会读取你选中的那几张图片，
+    并把它们作为该笔交易的附件保存。App <strong>不申请照片图库权限</strong>，无法浏览你的相册。
+  </li>
+  <li><strong>相机、通讯录、定位、麦克风：</strong>不申请。</li>
+  <li>
+    <strong>面容 ID / 触控 ID：</strong>仅在你开启 App 锁时，通过 iOS 系统接口验证。
+    生物识别数据由系统安全隔区处理，App 只能收到「通过 / 未通过」，<strong>拿不到也无法存储你的指纹或面容数据</strong>。
+  </li>
+</ul>
+
+<h2>6. 我们不做的事</h2>
+<ul>
+  <li>不投放广告。</li>
+  <li>不做数据分析与用户画像。</li>
+  <li>不跨 App、跨网站追踪你（对应 App Store 隐私标签：<strong>不用于追踪</strong>）。</li>
+  <li>不向第三方出售、共享或转让你的任何数据。</li>
+</ul>
+
+<h2>7. 儿童隐私</h2>
+<p>本 App 适合一般用户使用（4+ 分级），不会有意收集儿童的个人信息。我们本就不收集任何用户信息。</p>
+
+<h2>8. 你的数据，你说了算</h2>
+<ul>
+  <li><strong>删除：</strong>在 App 内删除交易、账本或附件即可，也可以直接删除 App。</li>
+  <li>删除 App 后，iCloud 中的副本可在 iOS「设置 → 你的名字 → iCloud → 管理存储空间」中删除。</li>
+  <li><strong>导出：</strong>可随时把账目导出成 CSV 或 JSON 文件带走。</li>
+  <li>由于数据不在我们手上，我们<strong>无法</strong>替你删除或恢复它——但也正因如此，没有人能替你动它。</li>
+</ul>
+
+<h2>9. 政策变更</h2>
+<p>
+  如本政策更新，我们会修改本页顶部的生效日期。涉及数据处理方式的重大变更，会在 App 更新说明中提示。
+</p>
+
+<h2>10. 联系方式</h2>
+<p>
+  对本政策有疑问，或想了解与你的数据有关的事，请发邮件至
+  <a href="mailto:【支持邮箱】">【支持邮箱】</a>。
+</p>
+
+<hr class="split">
+
+<div class="en" lang="en">
+
+<h1>Privacy Policy</h1>
+<p class="eff">
+  Qianey · developed by 【开发者名称】 · Effective date: October 7, 2026
+</p>
+
+<p class="lead">
+  <strong>In one line: Qianey does not collect your data.</strong>
+  No account, no servers of ours, no ads, no tracking. Your records live in your own iCloud.
+</p>
+
+<h2>1. What we don't collect</h2>
+<ul>
+  <li>No sign-up. We don't collect your phone number, email, name, or any identity information.</li>
+  <li>No device identifiers for tracking.</li>
+  <li>No third-party advertising, analytics, or crash-reporting SDKs. The app ships with zero third-party dependencies.</li>
+  <li>We don't operate any server that stores your records — we don't have one.</li>
+</ul>
+
+<h2>2. Where your data lives</h2>
+<p>
+  Every transaction, account, category, budget, merchant, member and attached image you record is stored in
+  <strong>your own private iCloud database</strong> (Apple CloudKit, under your Apple ID and iCloud storage).
+  Apple stores and encrypts it within your iCloud account.
+</p>
+<p>
+  <strong>We cannot read it.</strong> The app never uses CloudKit's public database, so no user's records are
+  visible to us anywhere.
+</p>
+<p>
+  If you share a ledger with your family, the people you invite can see the contents of that ledger through
+  Apple's sharing mechanism. Whether to share, and with whom, is entirely your choice. The developer is not a
+  participant in any share and cannot see the contents either. You can leave a shared ledger at any time.
+</p>
+
+<h2>3. Data kept on your device</h2>
+<ul>
+  <li>A local copy of the database, for offline entry and fast reads.</li>
+  <li>A few preferences, such as the current ledger, appearance mode, and app-lock setting.</li>
+</ul>
+<p>These stay on your device. They are not sent to us.</p>
+
+<h2>4. The one external network request: exchange rates</h2>
+<p>
+  When you record a transaction whose currency differs from your ledger's base currency, the app requests that
+  currency pair's rate from the public service <code>api.frankfurter.app</code> (Frankfurter, an open-source,
+  free exchange-rate API).
+</p>
+<ul>
+  <li>The request contains only the <strong>currency pair</strong> (for example USD to CNY) — no personal information, no account details, no amounts.</li>
+  <li>As with visiting any website, the operator of that service may see your IP address.</li>
+  <li>If you don't record in multiple currencies, this request never happens.</li>
+</ul>
+<p>Beyond this, the app makes no network requests at all.</p>
+
+<h2>5. We don't ask for permissions you don't need</h2>
+<ul>
+  <li>
+    <strong>Photos:</strong> the app reads an image only when you tap "Attachment" and pick it yourself, and stores it
+    as an attachment to that transaction. The app <strong>does not request photo library permission</strong> and cannot browse your library.
+  </li>
+  <li><strong>Camera, contacts, location, microphone:</strong> not requested.</li>
+  <li>
+    <strong>Face ID / Touch ID:</strong> used only when you enable App Lock, through the iOS system API.
+    Biometric data is handled by the Secure Enclave; the app receives only a pass/fail result and
+    <strong>can neither access nor store your fingerprint or face data</strong>.
+  </li>
+</ul>
+
+<h2>6. What we don't do</h2>
+<ul>
+  <li>No advertising.</li>
+  <li>No analytics or user profiling.</li>
+  <li>No tracking you across apps or websites (App Store privacy label: <strong>Data Not Used to Track You</strong>).</li>
+  <li>No selling, sharing, or transferring your data to third parties.</li>
+</ul>
+
+<h2>7. Children's privacy</h2>
+<p>
+  The app is intended for a general audience (rated 4+) and does not knowingly collect personal information from
+  children. We collect no user information at all.
+</p>
+
+<h2>8. Your data, your call</h2>
+<ul>
+  <li><strong>Delete:</strong> remove transactions, ledgers or attachments in the app, or delete the app itself.</li>
+  <li>After deleting the app, the iCloud copy can be removed in iOS Settings → your name → iCloud → Manage Storage.</li>
+  <li><strong>Export:</strong> take your records out as CSV or JSON whenever you like.</li>
+  <li>Because the data is not in our hands, we <strong>cannot</strong> delete or restore it for you — and for the same reason, nobody else can touch it either.</li>
+</ul>
+
+<h2>9. Changes to this policy</h2>
+<p>
+  If this policy changes, we will update the effective date at the top of this page. Significant changes to how
+  data is handled will be noted in the app's release notes.
+</p>
+
+<h2>10. Contact</h2>
+<p>
+  Questions about this policy or about your data? Email
+  <a href="mailto:【支持邮箱】">【支持邮箱】</a>.
+</p>
+
+</div>
+
+</body>
+</html>
